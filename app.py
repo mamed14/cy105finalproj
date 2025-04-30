@@ -3,20 +3,22 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
-# App title
+# Set background color and title text color
 st.markdown("""
     <style>
         .stApp {
-            background-color: #fffde7;
+            background-color: #fffde7;  # Soft yellow background
         }
-        h1, h2, h3, h4, h5, p {
-            color: black;
+        h1 {
+            color: black !important;  # Force title color to black
         }
-        .css-18e3th9 {
-            color: black;  # Specific CSS class for title text
+        h2, h3, h4, h5, p {
+            color: black;  # Set text color to black for other elements
         }
     </style>
 """, unsafe_allow_html=True)
+
+# App title
 st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 
 # Global vars
@@ -34,7 +36,7 @@ if uploaded_file:
         df.dropna(subset=["Name", "Rating"], inplace=True)
         df["Tags"] = df.get("Tags", "")
         df["features"] = df["Name"] + " " + df["Tags"].fillna("")
-
+        
         vectorizer = TfidfVectorizer()
         X = vectorizer.fit_transform(df["features"])
         model = NearestNeighbors(n_neighbors=5, metric="cosine")
@@ -43,8 +45,8 @@ if uploaded_file:
 
 # Predict section
 if model:
-    title = st.text_input("Movie Title")
-    tags = st.text_input("Tags (optional)", placeholder="e.g. sci-fi, thriller")
+    title = st.text_input("🎞️ Movie Title")
+    tags = st.text_input("🏷️ Tags (optional)", placeholder="e.g. sci-fi, thriller")
 
     if st.button("Predict"):
         input_features = vectorizer.transform([f"{title} {tags}"])
