@@ -9,11 +9,6 @@ st.markdown("""
         .stApp {
             background-color: #fffde7;  # Soft yellow background
         }
-        h1 {
-            color: black
-        h1, h2, h3, h4, h5, p {
-            color: black;  # Title and other text color to black
-        }
         .stMarkdown, .stText {
             color: black !important;  # Force results text color to black
         }
