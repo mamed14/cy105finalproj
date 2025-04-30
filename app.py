@@ -41,12 +41,12 @@ if uploaded_file:
         X = vectorizer.fit_transform(df["features"])
         model = NearestNeighbors(n_neighbors=5, metric="cosine")
         model.fit(X)
-        st.success("Model trained! Enter a movie below to see if you'd like it.")
+        st.success(" Enter a movie below to see if you'd like it.")
 
 # Predict section
 if model:
-    title = st.text_input("🎞️ Movie Title")
-    tags = st.text_input("🏷️ Tags (optional)", placeholder="e.g. sci-fi, thriller")
+    title = st.text_input("Movie Title")
+    tags = st.text_input("Tags (optional)", placeholder="e.g. sci-fi, thriller")
 
     if st.button("Predict"):
         input_features = vectorizer.transform([f"{title} {tags}"])
