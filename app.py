@@ -7,10 +7,7 @@ from sklearn.neighbors import NearestNeighbors
 st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 st.markdown("""
     <style>
-        body {
-            background-color: #fffde7;
-        }
-        .main {
+        .stApp {
             background-color: #fffde7;
         }
     </style>
