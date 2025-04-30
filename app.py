@@ -8,7 +8,7 @@ st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 st.markdown("""
     <style>
         .stApp {
-            background-color: ##F2E8A9;
+            background-color: ##f2e8a9;
         }
     </style>
 """, unsafe_allow_html=True)
