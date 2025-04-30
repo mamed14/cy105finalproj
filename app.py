@@ -12,7 +12,7 @@ st.markdown("""
         h1 {
             color: black !important;  # Force title color to black
         }
-        h2, h3, h4, h5, p {
+        h2, h3, h4, h5, p, div, span {
             color: black;  # Set text color to black for other elements
         }
     </style>
