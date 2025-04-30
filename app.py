@@ -5,6 +5,16 @@ from sklearn.neighbors import NearestNeighbors
 
 # App title
 st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
+st.markdown("""
+    <style>
+        body {
+            background-color: #fffde7;
+        }
+        .main {
+            background-color: #fffde7;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Global vars
 model = None
