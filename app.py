@@ -4,7 +4,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # App title
-st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 st.markdown("""
     <style>
         .stApp {
@@ -18,6 +17,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 
 # Global vars
 model = None
