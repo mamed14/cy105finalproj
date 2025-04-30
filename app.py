@@ -16,7 +16,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # App title
-st.title("Movie Taste Predictor")
+st.title(f"<p style='color: black;>Movie Taste Predictor")
 
 # Global vars
 model = None
