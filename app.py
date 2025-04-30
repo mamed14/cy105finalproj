@@ -4,17 +4,20 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # App title
+st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 st.markdown("""
     <style>
         .stApp {
-            background-color: #fffde7;  # Soft yellow background
+            background-color: #fffde7;
         }
         h1, h2, h3, h4, h5, p {
-            color: black;  # Set text color to black
+            color: black;
+        }
+        .css-18e3th9 {
+            color: black;  # Specific CSS class for title text
         }
     </style>
 """, unsafe_allow_html=True)
-st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 
 # Global vars
 model = None
