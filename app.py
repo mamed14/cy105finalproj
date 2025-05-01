@@ -4,6 +4,16 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # Set background color and title text color
+st.markdown("""
+    <style>
+        .stApp {
+            background-color: #fffde7;  # Soft yellow background
+        }
+        .stMarkdown, .stText {
+            color: black !important;  # Force results text color to black
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # App title
 st.title(f"<p style='color: black;>Movie Taste Predictor")
