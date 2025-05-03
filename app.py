@@ -49,8 +49,7 @@ if model:
         avg_score = predicted_ratings.mean()
         similar = df.iloc[indices[0]]["Name"].tolist()
 
-        st.markdown(
-    f"<p style='color: purple;'>🎯 Predicted Score: <b>{predicted_score} / 5</b></p>",
+        st.markdown("🎯 Predicted Score: <b>{predicted_score} / 5</b></p>",
     unsafe_allow_html=True)
         st.markdown("#### Similar Movies You've Rated:")
         st.write(similar)
