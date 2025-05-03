@@ -13,7 +13,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # App title
-st.title(f"<p style='color: black;'>Movie Taste Predictor")
+st.title("Movie Taste Predictor")
 
 # Global vars
 model = None
@@ -33,7 +33,7 @@ if uploaded_file:
         
         vectorizer = TfidfVectorizer()
         X = vectorizer.fit_transform(df["features"])
-        model = NearestNeighbors(n_neighbors=5, metric="cosine")
+        model = NearestNeighbors(n_neighbors=2, metric="cosine")
         model.fit(X)
         st.success(" Enter a movie below to see if you'd like it.")
 
