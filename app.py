@@ -7,7 +7,7 @@ from sklearn.neighbors import NearestNeighbors
 st.markdown("""
     <style>
         .stMarkdown, .stText {
-            color: black !important;  # Force results text color to black
+            color: #fffde7 !important;  # Force results text color to black
         }
     </style>
 """, unsafe_allow_html=True)
