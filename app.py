@@ -51,4 +51,5 @@ if model:
 
         st.markdown(f"### 🎯 Predicted Score: **{round(avg_score, 2)} / 5**")
         st.markdown("#### Similar Movies You've Rated:")
-        st.write(similar[0], "\n", similar[1])
+        st.write(similar[0])
+        st.write(similar[1])
