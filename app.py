@@ -6,9 +6,6 @@ from sklearn.neighbors import NearestNeighbors
 # Set background color and title text color
 st.markdown("""
     <style>
-        .stApp {
-            background-color: #fffde7;  # Soft yellow background
-        }
         .stMarkdown, .stText {
             color: black !important;  # Force results text color to black
         }
