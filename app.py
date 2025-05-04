@@ -33,6 +33,7 @@ st.markdown("""
     '>
         <h1 style='color: black; margin-bottom: 0;'> Movie Taste Predictor</h1>
         <p style='color: black;'>Upload your Letterboxd ratings and get personalized predictions!</p>
+        <p style='color: black;'>The more movies you've reviewed the more accurate your predictions will be! </p>
     </div>
 """, unsafe_allow_html=True)
 
