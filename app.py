@@ -9,6 +9,9 @@ st.markdown("""
         .stApp {
             background-color: white;
         }
+        .stText, .stWrite, .stMarkdown {
+             color: black !important;
+        }
     </style>
     <div style='
         background-color: #fffde7;
