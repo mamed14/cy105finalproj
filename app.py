@@ -60,7 +60,7 @@ if uploaded_file:
 
 # Predict section
 if model:
-    title = st.text_input("Movie Title")
+    title = st.text_input("★ Movie Title ★")
     tags = st.text_input("Tags (optional)", placeholder="e.g. sci-fi, thriller")
 
     if st.button("Predict"):
