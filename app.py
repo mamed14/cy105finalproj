@@ -27,7 +27,7 @@ st.markdown("""
         }
     </style>
     <div style='
-        background-color: #fffde7;
+        background-color: white;
         padding: 20px;
         border: 4px solid #000000;
         margin-bottom: 20px;
