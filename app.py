@@ -42,7 +42,7 @@ vectorizer = None
 df = pd.DataFrame()
 
 # Upload CSV
-uploaded_file = st.file_uploader("Upload your Letterboxd `ratings`", type=["csv"])
+uploaded_file = st.file_uploader("Upload your Letterboxd ratings", type=["csv"])
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
     if "Name" not in df.columns or "Rating" not in df.columns:
