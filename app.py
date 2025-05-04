@@ -15,6 +15,7 @@ st.markdown("""
         }
         .stApp {
             background-color: #fffde7;
+            font-family: Cambria, serif;
         }
         h1, h2, h3, h4, h5, h6, p, div {
             color: black !important;
