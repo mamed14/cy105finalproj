@@ -1,4 +1,4 @@
-import streamlit as st
+loimport streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
@@ -8,7 +8,7 @@ st.markdown("""
      <style>
           div.stButton > button {
             background-color: black;
-            color: white;
+            color: purple;
             border: 1px solid white;
             padding: 0.5em 1em;
             border-radius: 8px;
