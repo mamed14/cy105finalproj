@@ -19,6 +19,7 @@ st.markdown("""
         }
         h1, h2, h3, h4, h5, h6, p, div {
             color: black !important;
+            font-family: Cambria, serif;
         }
         .stText, .stWrite, .stMarkdown {
              font-family: Cambria, serif;
