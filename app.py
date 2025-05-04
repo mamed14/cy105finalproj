@@ -21,6 +21,7 @@ st.markdown("""
             color: black !important;
         }
         .stText, .stWrite, .stMarkdown {
+             font-family: Cambria, serif;
              color: black !important;
         }
     </style>
