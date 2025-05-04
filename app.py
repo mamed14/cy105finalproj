@@ -6,6 +6,13 @@ from sklearn.neighbors import NearestNeighbors
 # Set background color and title text color
 st.markdown("""
      <style>
+          div.stButton > button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+        }
         .stApp {
             background-color: #fffde7;
         }
