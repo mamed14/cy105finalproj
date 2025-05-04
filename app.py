@@ -14,7 +14,7 @@ st.markdown("""
             border-radius: 8px;
         }
         .stApp {
-            background-color: #fffde7;
+            background-color: #f7f4d5;
             font-family: Cambria, serif;
         }
         h1, h2, h3, h4, h5, h6, p, div {
@@ -27,7 +27,7 @@ st.markdown("""
         }
     </style>
     <div style='
-        background-color: #f7f4d5;
+        background-color: #fffde7; 
         padding: 20px;
         border: 4px solid #000000;
         margin-bottom: 20px;
