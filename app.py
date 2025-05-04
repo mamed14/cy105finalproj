@@ -29,7 +29,7 @@ st.markdown("""
     <div style='
         background-color: #fffde7;
         padding: 20px;
-        border-bottom: 4px solid #000000;
+        border: 4px solid #000000;
         margin-bottom: 20px;
     '>
         <h1 style='color: black; margin-bottom: 0;'> Movie Taste Predictor</h1>
