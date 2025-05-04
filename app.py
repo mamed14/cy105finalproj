@@ -5,6 +5,11 @@ from sklearn.neighbors import NearestNeighbors
 
 # Set background color and title text color
 st.markdown("""
+     <style>
+        .stApp {
+            background-color: white;
+        }
+    </style>
     <div style='
         background-color: #fffde7;
         padding: 20px;
