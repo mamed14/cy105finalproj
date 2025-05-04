@@ -11,13 +11,10 @@ st.markdown("""
         border-bottom: 4px solid #000000;
         margin-bottom: 20px;
     '>
-        <h1 style='color: black; margin-bottom: 0;'>🎬 Movie Taste Predictor</h1>
+        <h1 style='color: black; margin-bottom: 0;'> Movie Taste Predictor</h1>
         <p style='color: black;'>Upload your Letterboxd ratings and get personalized predictions!</p>
     </div>
 """, unsafe_allow_html=True)
-
-# App title
-st.title("Movie Taste Predictor")
 
 # Global vars
 model = None
