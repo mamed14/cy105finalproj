@@ -42,7 +42,7 @@ vectorizer = None
 df = pd.DataFrame()
 
 # Upload CSV
-uploaded_file = st.file_uploader("☆ Upload your Letterboxd ratings here:", type=["csv"])
+uploaded_file = st.file_uploader("★ Upload your Letterboxd ratings here:", type=["csv"])
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
     if "Name" not in df.columns or "Rating" not in df.columns:
@@ -56,7 +56,7 @@ if uploaded_file:
         X = vectorizer.fit_transform(df["features"])
         model = NearestNeighbors(n_neighbors=2, metric="cosine")
         model.fit(X)
-        st.success(" Enter a movie below to see if you'd like it.")
+        st.success(" ★ Enter a movie below to see if you'd like it.")
 
 # Predict section
 if model:
