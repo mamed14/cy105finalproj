@@ -29,7 +29,7 @@ st.markdown("""
         background-color: #fffde7; 
         padding: 20px;
         border: 4px solid #000000;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     '>
         <h1 style='color: black; margin-bottom: 0;'> Movie Taste Predictor</h1>
         <p style='color: black;'>Upload your Letterboxd ratings and get personalized predictions!</p>
