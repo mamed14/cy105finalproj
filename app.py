@@ -7,7 +7,7 @@ from sklearn.neighbors import NearestNeighbors
 st.markdown("""
      <style>
           div.stButton > button {
-            background-color: #2596be;
+            background-color: #e0f4cc;
             color: black;
             border: 1px solid white;
             padding: 0.5em 1em;
