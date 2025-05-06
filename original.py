@@ -1,42 +1,8 @@
-Skip to content
-Navigation Menu
-mamed14
-cy105finalproj
+import streamlit as st
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.neighbors import NearestNeighbors
 
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-Commit 28fda11
-mamed14
-mamed14
-authored
-last week
-Verified
-Update app.py
-main
-1 parent 
-8b40bfb
- commit 
-28fda11
-File tree
-Filter files…
-app.py
-1 file changed
-+10
--0
-lines changed
-Search within code
- 
-‎app.py
-+10
-Original file line number	Diff line number	Diff line change
-@@ -5,27 +5,37 @@
 
 # App title
 st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
