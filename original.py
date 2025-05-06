@@ -3,19 +3,16 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
-
 # App title
 st.title("🎬 Movie Taste Predictor (Letterboxd-Powered)")
 st.markdown("""
     <style>
-        body {
-            background-color: #fffde7;
-        }
         .main {
             background-color: #fffde7;
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Global vars
 model = None
@@ -40,11 +37,17 @@ if uploaded_file:
         st.success("Model trained! Enter a movie below to see if you'd like it.")
 
 # Predict section
-0 commit comments
-Comments
-0
- (0)
-Comment
-You're receiving notifications because you're subscribed to this thread.
+if model:
+    title = st.text_input("Movie Title")
+    tags = st.text_input("Tags (optional)", placeholder="e.g. sci-fi, thriller")
 
-R20 selected.  
+    if st.button("Predict"):
+        input_features = vectorizer.transform([f"{title} {tags}"])
+        distances, indices = model.kneighbors(input_features)
+        predicted_ratings = df.iloc[indices[0]]["Rating"]
+        avg_score = predicted_ratings.mean()
+        similar = df.iloc[indices[0]]["Name"].tolist()
+
+        st.markdown(f"### 🎯 Predicted Score: **{round(avg_score, 2)} / 5**")
+        st.markdown("#### 🎥 Similar Movies You've Rated:")
+        st.write(similar)
